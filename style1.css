@@ -1,0 +1,323 @@
+.navbar
+{
+    height: 53px;
+    position: sticky;
+    display: flex;
+    background-color: black;
+    width:100%;
+
+}
+.navbar ul
+{
+    margin: 10px 5px;
+    padding: 5px;
+    display: flex;
+}
+.navbar li
+{
+margin: 10px 5px;
+    list-style: none;    }
+.navbar a
+{
+color: whitesmoke;
+font:bolder;
+padding: 2px 10px;
+margin: 10px;
+text-decoration: none;
+}
+.navbar a:hover
+{
+    color: blue;
+
+}
+section
+{
+    margin-top: 6px;
+    height:100vh;
+    padding:80px;
+   
+}
+section::before
+{
+    content: "";
+    position: absolute;
+   background: linear-gradient(rgba(0,0,0,0.7),#222f5e),url('prj2 img/hoome.jpg') no-repeat center center/cover;
+    height: 565px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    
+
+}
+.home
+{
+    
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-size: 1.3rem;
+   height: 175px;
+    margin-top:6px;
+     margin-bottom:120px;
+    padding-bottom:120px; 
+}
+.home h1
+{
+    font-size:3.9rem;
+    text-shadow: 2px 2px rgb(63, 167, 180);
+    margin-bottom:10px;
+    color:red;
+ font-family: 'Reggae One', cursive;
+    
+}
+.home p
+{
+    color: azure;
+    font-style: inherit;
+    font-size: 43px;
+    margin: 10px 10px;
+    padding: 10px;
+}
+#button
+{
+    font-size:1rem;
+    padding:6px 6px 6px 6px;
+    margin:40px;
+    border-radius:20px;
+    border:2px solid red;
+    background-color:red;
+    box-shadow: 0px 2px 2px white;
+    width: 140px;
+    
+}
+#button a{
+    text-decoration: none;
+    color: white;
+}
+#button:hover
+{
+    background-color: whitesmoke;
+}
+#button a:hover{
+    color: red;
+}
+.content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 340px;
+    margin-bottom: 320px;
+}
+.content h1
+{
+    font-size: 3.1rem;
+}
+.content h2
+{
+    font-size: 2.1rem;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    color: red;
+    margin-bottom: 10px;
+}
+.content p
+{
+    font-size: 1.7rem;
+    margin-top: 5px;
+    margin-bottom: 29px;
+}
+.content img
+{
+    height: 223px;
+    width: auto;
+} 
+
+/*.cnt2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 570px;
+    margin-bottom: 450px;
+}*/
+
+.book 
+{
+    background: linear-gradient(rgba(0,0,0,0.7),#121a38), url('prj2 img/hoome.jpg') no-repeat center center/cover;
+     width: 100%;
+     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+
+}
+
+ form{
+    max-width: 600px;
+    width: 100%;
+    margin-top: 20px;
+   }
+.gr{
+    margin-bottom: 10px;
+}
+input, textarea,button{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+border: 2px white;
+    border-radius: 16px;
+    box-shadow: 0.08rem 0.12rem 0.1rem white;
+    outline: 0;
+    resize: none;
+    background: transparent;
+    color: white;
+}
+textarea{
+    margin-top: 25px;
+}
+label{
+    height: 90%;
+    position: relative;
+    padding: 10px;
+    cursor: text;
+    color:black;
+     top: -27px;
+     filter: invert(100%);
+     transition: 0.2s;
+}
+
+#Item{
+    top: -100px;
+}
+ .ibox
+{
+    display:flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.ibox .gr{
+    width: 47%;
+}
+.icon{
+    color: white;
+    top: 30px;
+}
+ div h1{
+    text-align: center;
+    margin-top: 180px;
+    margin-bottom: 4px;
+    font-size: 2.9rem;
+ }
+ .book h1{
+    margin-top: -15px;
+    color: whitesmoke;
+ }
+ input:focus~label,
+ input:valid~label,
+ textarea:focus~label,
+ textarea:valid~label{
+    top: -55px;
+    font-size: 14px;
+ }
+ #btn2{
+    width: 10rem;
+    padding: 6px;
+    border: 2px solid black;
+    border-radius: 16px;
+    margin-left: 14rem;
+    background-color: black;
+    color: whitesmoke;
+ }
+ #btn2:hover{
+    background-color: whitesmoke;
+    color: black; 
+    border: black;
+    box-shadow: 0 0.3rem 0.3rem black;
+    font: bolder;
+ }
+.cnt2
+{
+    height: 25px;
+      display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+    margin-bottom:20px ;
+    background-color:rgb(233, 243, 242);
+}
+.cnt2 img
+{
+    height: 70px;
+    width:auto;
+    padding: 10px;
+}
+.cnt3 h2
+{
+    color: red;
+    font-size: 2.1rem;
+    margin-bottom: 10px;
+}
+.cnt3 p
+{
+
+    font-size: 1.7rem;
+    margin-top: 5px;
+    margin-bottom: 20px;
+
+}
+.cnt3
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 350px;
+    margin-bottom: 400px;
+    height: 100px;
+}
+.cnt3 img
+{
+    height: 60px;
+    width:auto;
+      display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+#img1
+{
+    
+    height: 90px;
+    width:auto;
+}
+#img3
+{
+    
+    height: 140px;
+    width:auto;
+    margin-top: 0px;
+}
+.cnt3 h1
+{
+    font-size: 2.9rem;
+    margin-top: 50px;
+}
+footer
+{
+    background-color:black;
+    color:white;
+    text-align:center;
+    height:79px;
+    padding: 0.2px;
+    width: 100%;
+    left: 0;
+}
+

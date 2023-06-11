@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width initial scale=1.0">
+<meta http-equiv="X-UA-Compatible"content="ie=edge">
+<link rel="stylesheet" href="style1.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+<script src="prj2.js"></script>
+
+<title>Spread</title>
+</head>
+<body>
+  <header>
+        <nav class="navbar">
+<ul>
+    <li><a href="project2.html">Home</a></li>
+    <li><a href="service.html">Service</a></li>
+    <li><a href="about.html">About us</a></li>
+<li><a href ="book.html">Contact Us</a></li>
+</ul>
+</nav>
+       </header>
+        <div class="book">
+            <h1>BOOK A PICKUP</h1>
+            <form  method="post" id="google-sheet" onsubmit="reset();">
+                <div class="ibox">
+                      <div class="gr">
+                       <input type="text" id="Name" required>
+                       <label for="Name"><i class="fa-solid fa-user"></i>Your Name</label>
+                    </div>
+                    <div class="gr">
+                      <input type="email"  id="Email" required>
+                      <label for="Email"><i class="fa-solid fa-envelope fa-lg"></i>Your Email</label>
+                    </div>
+                </div>
+                <div class="ibox">
+                <div class="gr">
+            <input type="number" id="Number"required>
+            <label for="Number"><i class="fa-solid fa-address-book"></i>Your Contact Number</label>
+            </div>
+            <div class="gr">
+            <input type="datetime-local"  id="Date" min="2015-01-01" style="filter:invert(100%); color: black; border:black;box-shadow:0.08rem 0.12rem 0.1rem black;" required>
+            </div>
+            </div>
+            <div class="gr">
+            <input type="text" id="Address" required>
+            <label for="Address"><i class="fa-sharp fa-solid fa-location-dot"></i>Enter your address</label>
+            </div>
+            
+            <textarea name="items" id="Items"cols="10" rows="5" required></textarea>
+            <label for="Items" id="Item"><i class="fa-solid fa-list"></i>List out the items to be picked up</label>
+           
+            <button type="submit" name="button" id="btn2">Submit</button>
+            </form>
+        </div>
+        
+        
+       <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwImkYKrf53eiV5-TCBrSxnz5DD-rQidkiJi5g_PgAaiQoG0IfdT5up5YXxXC675SYlFg/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+             
+        </body>
+</html>
